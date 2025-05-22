@@ -1,4 +1,5 @@
 import rpg_classes
+import game
 
 def battle(your_character, enemy_character):
     # 전투 시작
@@ -29,7 +30,6 @@ def battle(your_character, enemy_character):
             your_character.do_heal()
             print(f"당신의 채력: {your_character.health}")
             print(f"{enemy_character.name}의 채력: {enemy_character.health}")  
-            break
         else:
             print("잘못된 선택입니다.")
         
@@ -39,5 +39,12 @@ def battle(your_character, enemy_character):
             enemy_character.do_attack(your_character)
             if your_character.health <= 0:
                 print(f"{your_character.name}이(가) 쓰러졌습니다.")
+                re=int(input("게임을 다시 시작하시겠습니까? (1: 예, 0: 아니오) "))
+                if re == 1:
+                    game.main()
+                else:
+                    print("게임을 종료합니다.")
+                    exit()
+                    break
                 break
     

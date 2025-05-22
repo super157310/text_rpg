@@ -40,7 +40,7 @@ class Mimic(Character):
     def __init__(self, name):
         super().__init__(name, health=100, attack=20, heal=0, mana=0) #각 수치 조정 필요
         
-# 마왕 클래스 dd
+# 마왕 클래스 
 class Boss(Character):
     def __init__(self, name):
         super().__init__(name, health=1000, attack=50, heal=0, mana=0) #각 수치 조정 필요
