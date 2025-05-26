@@ -70,7 +70,7 @@ def main():
         time.sleep(1)
         os.system('cls')  # 콘솔 화면 지움
         your_character.health += 20
-        print("당신은 충분한 휴식을 취한뒤 채력을 회복합니다.")
+        print("당신은 충분한 휴식을 취한뒤 채력을 회복합니다.(채력이 +20)")
         time.sleep(1)
         print("당신은 더욱 더 깊은 던전속으로 들어갑니다.")
         time.sleep(1)
