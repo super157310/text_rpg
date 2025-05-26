@@ -1,5 +1,6 @@
 import rpg_classes
 import game
+import os
 
 def battle(your_character, enemy_character):
     # 전투 시작
@@ -11,6 +12,7 @@ def battle(your_character, enemy_character):
         print("2. 마법")
         print("3. 회복")
         choice = int(input())
+        os.system('cls') # 콘솔 화면 지움
         
         if choice == 1:
             your_character.do_attack(enemy_character)
